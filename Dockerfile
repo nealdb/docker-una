@@ -15,7 +15,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
 
 RUN cd /tmp \
   && rm /var/www/html/index.html \
-  && wget -O UNA.zip https://github.com/unaio/una/archive/master.zip \
+  && wget -O UNA.zip https://github.com/unaio/una/archive/12.0.0.zip \
   && ln -s /var/www/html una-$VER \
   && unzip UNA.zip \
   && rm UNA.zip \
